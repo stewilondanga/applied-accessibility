@@ -21,6 +21,10 @@ body {
   height: 1.5em;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif
+}
+
 .containers {
   width: 520px;
   margin: 20px auto;

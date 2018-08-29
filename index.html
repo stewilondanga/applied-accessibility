@@ -10,42 +10,44 @@
 <body>
 
   <div class="my_social">
-      <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
+    <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
           <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
         </a>
-      <a href="https://stewilondanga.github.io/" class="social">
+    <a href="https://stewilondanga.github.io/" class="social">
           <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
         </a>
-      <a href="https://twitter.com/stew_ilondanga" class="social">
+    <a href="https://twitter.com/stew_ilondanga" class="social">
           <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
         </a>
-    </div>
+  </div>
 
-    <h2>Applied Accessibility</h2>
-    <h3>What is Accessibility?</h3>
-    <p>Accessibility generally means having web content and user interface that can be understood, navigated and interacted with by a broad audience.</p>
-    <p>Let's make this lesson short and simple by teaching basic concepts which front-end developers use in their day to day life.</p>
-    <p>Just try to answer the simple questions provided below about <strong>Accessibility</strong> and learn the basic things in it.</p>
-    <p>Let's start ... (Bring your cup of coffee to the table).</p>
+  <h2>Applied Accessibility</h2>
+  <h3>What is Accessibility?</h3>
+  <p>Accessibility generally means having web content and user interface that can be understood, navigated and interacted with by a broad audience.</p>
+  <p>Let's make this lesson short and simple by teaching basic concepts which front-end developers use in their day to day life.</p>
+  <p>Just try to answer the simple questions provided below about <strong>Accessibility</strong> and learn the basic things in it.</p>
+  <p>Let's start ... (Bring your cup of coffee to the table).</p>
 
-    <ul>
-      <li>
-        <h4>Question 1: What is the use of an alt attribute in the img tag?</h4>
-        <p><strong>Answer:</strong> If your answer is to provide alternative text to display when an image fails to load, you are partially right.<p>
-        <p>But only partially? Yes.
-        <p>The alt attribute does its purpose more than you think.</p>
-        <p>Have you ever heard about <strong>Screen Readers?</strong></p>
-        <p><i>Screen Readers are used by blind people to read the website completely. Screen readers traverse every Dom element and read the content in that element aloud for the user. Since Screen readers couldn't able to read the image tag, it reads the text from the alternative tag aloud to the user.</i>
-        <p>So, Next time when you code, ensure you use the alt attribute, remembering this fact :)</p>
-    </p>
-      </li>
-      <li>
-        <h4>Question 2: Why to make elements visible only to Screen Readers?</h4>
-        <p><strong>Answer:</strong> Consider, you have a chart representation in your web page. How do blind people make use of it?</p>
-        <p>Your chart representation about your data may not be accessible to them and even Screen Reader fails to read an image. In that case, create a table for your chart representation and make it visible only to Screen Readers.<p>
-        <p>You need to hide the table but, you should not use, <i><b>display: none;</i></b> or <i><b>visibility: hidden;</i></b> either to hide since even Screen Readers skips these elements.</p>
-        <p> So, create a table with the following CSS to hide it from the screen and make it accessible to these users.</p>
-        <code>
+  <ul>
+    <li>
+      <h4>Question 1: What is the use of an alt attribute in the img tag?</h4>
+      <p><strong>Answer:</strong> If your answer is to provide alternative text to display when an image fails to load, you are partially right.
+        <p>
+          <p>But only partially? Yes.
+            <p>The alt attribute does its purpose more than you think.</p>
+            <p>Have you ever heard about <strong>Screen Readers?</strong></p>
+            <p><i>Screen Readers are used by blind people to read the website completely. Screen readers traverse every Dom element and read the content in that element aloud for the user. Since Screen readers couldn't able to read the image tag, it reads the text from the alternative tag aloud to the user.</i>
+              <p>So, Next time when you code, ensure you use the alt attribute, remembering this fact :)</p>
+            </p>
+    </li>
+    <li>
+      <h4>Question 2: Why to make elements visible only to Screen Readers?</h4>
+      <p><strong>Answer:</strong> Consider, you have a chart representation in your web page. How do blind people make use of it?</p>
+      <p>Your chart representation about your data may not be accessible to them and even Screen Reader fails to read an image. In that case, create a table for your chart representation and make it visible only to Screen Readers.
+        <p>
+          <p>You need to hide the table but, you should not use, <i><b>display: none;</i></b> or <i><b>visibility: hidden;</i></b> either to hide since even Screen Readers skips these elements.</p>
+          <p> So, create a table with the following CSS to hide it from the screen and make it accessible to these users.</p>
+          <code>
           position: absolute; <br>
           left: -10000px;<br>
           width: 1px;<br>
@@ -53,24 +55,26 @@
           top: auto;<br>
           overflow: hidden;
         </code>
-      </li>
-      <li>
-        <h4>Question 3: How to make your links more descriptive?</h4>
-        <p><strong>Answer: </strong>Providing descriptive links are the best way to make it accessible to everyone.<p>
-        <p>Having a list of "click here" or "read more" links isn't helpful, for these people especially.
-        <p>Instead, you should use brief but descriptive text within the <b>a</b> tags to provide more meaning for these users.</p>
-        <p>So, how do you make it more descriptive? Consider a below text.</strong></p>
-        <p><a href="#">Click here</a> for information about batteries.</p>
-        <p>To make it more descriptive for the Screen Readers as well, try providing link tag to the descriptive text like below.</p>
-        <p>Click here for <a href="#">information about batteries.</a></p>
-      </li>
-    </ul>
+    </li>
+    <li>
+      <h4>Question 3: How to make your links more descriptive?</h4>
+      <p><strong>Answer: </strong>Providing descriptive links are the best way to make it accessible to everyone.
+        <p>
+          <p>Having a list of "click here" or "read more" links isn't helpful, for these people especially.
+            <p>Instead, you should use brief but descriptive text within the <b>a</b> tags to provide more meaning for these users.</p>
+            <p>So, how do you make it more descriptive? Consider a below text.</strong>
+            </p>
+            <p><a href="#">Click here</a> for information about batteries.</p>
+            <p>To make it more descriptive for the Screen Readers as well, try providing link tag to the descriptive text like below.</p>
+            <p>Click here for <a href="#">information about batteries.</a></p>
+    </li>
+  </ul>
 
-    <h3>Conclusion</h3>
-    <p>Hope, I have taught you the basics of Applied Accessibility and it's importance.</p>
-    <p>Sounds interesting?</p>
-    <p>Learn more about Applied Accessibility at <a target="_blank" href="https://learn.freecodecamp.org/responsive-web-design/applied-accessibility">FreeCodeCamp</a></p>
-    <p>Thank you.</p>
+  <h3>Conclusion</h3>
+  <p>Hope, I have taught you the basics of Applied Accessibility and it's importance.</p>
+  <p>Sounds interesting?</p>
+  <p>Learn more about Applied Accessibility at <a target="_blank" href="https://learn.freecodecamp.org/responsive-web-design/applied-accessibility">FreeCodeCamp</a></p>
+  <p>Thank you.</p>
 
   <section id="contact">
     <div class="overlay">
